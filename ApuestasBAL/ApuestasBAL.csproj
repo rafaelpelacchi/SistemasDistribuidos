@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC1B1912-FCA5-423F-97DE-E79D9BDE874E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ApuestasBAL</RootNamespace>
+    <AssemblyName>ApuestasBAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BALCapa.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApuestasDAL\ApuestasDAL.csproj">
+      <Project>{37C1716A-516E-4596-85BF-937D7885E8AF}</Project>
+      <Name>ApuestasDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApuestasDTO\ApuestasDTO.csproj">
+      <Project>{17232437-0E8F-4310-B765-C4A61BACACEF}</Project>
+      <Name>ApuestasDTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
