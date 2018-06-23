@@ -14,5 +14,10 @@ namespace ApuestasDAL
 
             return usuarioRetorno;
         }
+
+        public bool registrarUsuario(DTOUsuario user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

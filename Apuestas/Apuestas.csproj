@@ -63,32 +63,56 @@
       <HintPath>..\packages\AutoMapper.7.0.0\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\" />
-    <Folder Include="App_Code2\" />
+    <Folder Include="App_Code\" />
+    <Folder Include="Content\ModuloAdministracion\" />
+    <Folder Include="Content\ModuloCentral\" />
+    <Folder Include="Content\ModuloInicio\" />
+    <Folder Include="Scripts\ModuloAdministracion\" />
+    <Folder Include="Scripts\ModuloCentral\" />
+    <Folder Include="Scripts\ModuloInicio\" />
+    <Folder Include="Content\ModuloInicio\img\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Views\Usuarios\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Code2\AutomapperConfiguration.cs" />
     <Compile Include="Models\UsuarioViewModel.cs" />
+    <Compile Include="App_Code\AutomapperConfiguration.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsuariosControllers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Content\Ejemplo.js" />
+    <Content Include="Content\ModuloInicio\Logo.jpg" />
+    <Content Include="Content\ModuloInicio\Styles.css" />
+    <Content Include="Scripts\ModuloInicio\Login.js" />
+    <Content Include="Content\ModuloInicio\img\UsuariosDistribuidos.jpg" />
+    <Content Include="Views\Index.aspx" />
+    <Content Include="Views\Usuarios\CrearUsuarios.cshtml" />
+    <Content Include="Scripts\ModuloInicio\RegistrarUsuario.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApuestasDTO\ApuestasDTO.csproj">
@@ -99,6 +123,9 @@
       <Project>{DC1B1912-FCA5-423F-97DE-E79D9BDE874E}</Project>
       <Name>ApuestasBAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ModuloInicio\Fondo.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -1,0 +1,11 @@
+﻿.footerMio {
+    background-color: blue;
+    text-color: white;
+    color: white;
+    text-align: center;
+    height:10%;
+}
+
+.bgimg {
+    background-image: url('~/Content/Fondo.jpeg');
+}

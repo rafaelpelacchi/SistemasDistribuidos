@@ -1,51 +1,49 @@
 ﻿
-
 <div class="row" style="height:20%">
 </div>
-
 <div class="row" style="height:60%">
     <div class=col-md-2></div>
     <div class=col-md-8>
         <div class="row">
             <div class="col-md-12">
-                <div class="row" style="margin-top:3%">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4" style="text-align:center">
-                        <img src="~/Content/ModuloInicio/img/UsuariosDistribuidos.jpg">
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
+
                 <div class="row" style="margin-top:2%">
-                    @Html.TextBox("Login", null, new { @class = "form-control", required = "required", autofocus = "autofocus", placeholder = "Usuario" })
+                    @Html.TextBox("Usuario", null, new { @class = "form-control", required = "required", autofocus = "autofocus", placeholder = "Usuario" })
                 </div>
+
                 <div class="row" style="margin-top:2%">
                     @Html.Password("Password", null, new { @class = "form-control", required = "required", placeholder = "Password" })
                 </div>
+
+                <div class="row" style="margin-top:2%">
+                    @Html.TextBox("Nombre", null, new { @class = "form-control", required = "required", placeholder = "Nombre" })
+                </div>
+
+                <div class="row" style="margin-top:2%">
+                    @Html.TextBox("Apellido", null, new { @class = "form-control", required = "required", placeholder = "Apellido" })
+                </div>
+
                 <div class="row" style="margin-top:2%">
                     <div class="col-md-4"></div>
                     <div class="col-md-4" style="text-align:center">
-                        <div><button type="button" value="Ingresar" class="btn btn-primary" id="btnIngresar">Comentar</button></div>
-                        <div> <a href="@Url.Action("CrearUsuario", "Home")"> Crear Usuario </a></div>
+                        <div><button type="button" value="Registrarse" class="btn btn-primary" id="btnRegistrarse">Registrarse</button></div>
                     </div>
                     <div class="col-md-4"></div>
                 </div>
+
+
             </div>
         </div>
-
     </div>
     <div class=col-md-2></div>
 </div>
-
 <div class="form container">
     <form method= ="post" action="http://192.168.1.7:8765/test/test?action=test">
         <label>hola</label><input type="text" name="hola">
         <input type="submit" value="agregar" />
     </form>
 
-
 </div>
-
 <div class="row" style="height:20%"></div>
 
-
-@Html.Hidden("URLIngresar", Url.Action("ingresar", "Home"))
+@Html.Hidden("URLRegistrar", Url.Action("registrar", "Usuarios"))

@@ -26,6 +26,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DTOUsuario.cs" />
+    <Compile Include="Constantes.cs" />
+    <Compile Include="DTOCriptomoneda.cs" />
+    <Compile Include="DTOListaCriptomonedas.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
