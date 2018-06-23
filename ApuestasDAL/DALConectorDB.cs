@@ -8,7 +8,7 @@ namespace ApuestasDAL
         {
             NpgsqlConnection cn = new NpgsqlConnection("SERVER=localhost; UID=postgres;PWD=damaris;DATABASE=ProyectoAsistenciaCCB;");
 
-            cn.Open();
+            //cn.Open();
 
             NpgsqlCommand cmd = new NpgsqlCommand("INSERT INTO reportes VALUES(?, ?, ?, ?, ?)", cn);
 

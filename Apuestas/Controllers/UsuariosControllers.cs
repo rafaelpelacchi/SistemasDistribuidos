@@ -15,8 +15,8 @@ namespace Apuestas.Controllers
 
         BALCapa capaBal = new BALCapa();
         public ActionResult CrearUsuarios(String usuario, String password, String nombre, String apellido){
-            DTOUsuario user = new DTOUsuario(usuario,password,nombre,apellido);
-            return capaBal.crearUsuariosBal(user);
+        DTOUsuario user = new DTOUsuario(usuario,password,nombre,apellido);
+            return View();
         }
 
 
