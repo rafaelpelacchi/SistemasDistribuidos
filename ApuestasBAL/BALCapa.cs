@@ -28,7 +28,12 @@ namespace ApuestasBAL
             return infoCriptomonedas;
         }
 
-        public 
+        public bool crearUsuariosBal(DTOUsuario user)
+        {
+            DALCapaDB dal = new DALCapaDB();
+            return dal.registrarUsuario(user);
+            
+        }
 
         private string HttpGet(int Ruta)
         {

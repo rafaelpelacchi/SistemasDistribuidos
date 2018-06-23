@@ -17,7 +17,7 @@ namespace ApuestasDAL
 
         public bool registrarUsuario(DTOUsuario user)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
